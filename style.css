@@ -1,0 +1,320 @@
+body
+{
+    background-image: url("backgrounds/blurred.png");
+    background-size: cover;
+
+}
+
+p
+{
+  font-family: "cooper_hewittbook";
+  font-size: 1.4rem;
+}
+
+strong
+{
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+/********************************************************************/
+/* Colored bars, for separation and color theming */
+/********************************************************************/
+
+#purple_bar
+{
+  height: 5px;
+  background-color: purple;
+}
+
+#royal_blue_bar
+{
+  height: 5px;
+  background-color: rgb(65, 105, 225);
+}
+
+#emerald_green_bar
+{
+  height: 5px;
+  background-color: #1B4242;
+}
+
+#black_bar
+{
+  height: 3px;
+  background-color: black;
+}
+
+#grey_grad_50
+{
+  height: 50px;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(63, 63, 63));
+}
+
+#grey_grad_7
+{
+  height: 7px;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(63, 63, 63));
+  margin: 0px 0px 10px 0px;
+}
+
+
+
+
+
+
+
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+h1 /* For names ? */
+{
+    font-size: 4rem;
+    margin: 0px;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 .home_title /* gradient wouldn't show up on Safari iOS */
+{
+    font-size: 5rem;
+    margin: 0px;
+    color: black;
+    /* background-image: linear-gradient(to right, rgb(0, 0 ,0), rgb(204, 204, 204));
+    -webkit-background-clip: text;
+    color: transparent; */ 
+    display: flex;
+    justify-content: center; 
+}
+
+h2 /* For titles or short 5 word max description ? */
+{
+    margin: 5px 0px;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, rgb(0, 0 ,0), rgb(124, 124, 124));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+/********************************************************************/
+/* Accessibility and links */
+/********************************************************************/
+
+.back_button
+{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 20px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-family: "cooper_hewittbook";
+  border-radius: 200px;
+}
+
+
+
+
+
+
+
+
+/********************************************************************/
+/* Character bios */
+/********************************************************************/
+
+header
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 .character_bio_name
+{
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.affiliation
+{
+  font-size: 2rem;
+  font-family: "cooper_hewittbook";
+}
+
+.character_bio
+{
+  text-align: left;
+  word-wrap: break-word;
+  
+}
+.character_bio_frame
+{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 20px;
+  margin: 20px 20px ;
+  gap: 20px;
+}
+
+.character_bio_photo
+{
+  margin: 0px 10px 0px 0px;
+  float: left;
+}
+
+.character_bio_text
+{
+  text-align: justify;
+  margin: 0 0% 0 0;
+}
+
+.character_relationships_container
+{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.character_relationships_frame
+{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  text-align: center;
+  font-family: "cooper_hewittbook";
+  background-color: grey;
+  margin: 10px 10px;
+}
+
+.relationship_character_name
+{
+  font-size: 1.3rem;
+}
+
+.character_relationships
+{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: baseline;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  background-color: white;
+  width: 100%;
+}
+
+
+
+
+
+/********************************************************************/
+/* Home page */ 
+/********************************************************************/
+
+.character_frame
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.character_frame_name
+{
+  font-size: 1.5rem;
+  text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.character_frames
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/********************************************************************/
+/* Removes the stuff I don't like in classic CSS */
+/********************************************************************/
+
+ul {
+    list-style-type: none;
+}
+
+a:link 
+{ 
+  text-decoration: none;
+  color: purple;
+}
+
+a:visited 
+{
+  text-decoration: none;
+  color: purple; 
+}
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+
+
+/********************************************************************/
+/* Fonts */
+/********************************************************************/
+
+@font-face {
+  font-family: 'cooper_hewittthin';
+  src: url('fonts/cooperhewitt-thin-webfont.woff2') format('woff2'),
+       url('fonts/cooperhewitt-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'cooper_hewittbook';
+  src: url('fonts/cooperhewitt-book-webfont.woff2') format('woff2'),
+       url('fonts/cooperhewitt-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
