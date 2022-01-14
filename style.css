@@ -279,9 +279,17 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   gap: 10px 10px;
 }
 
+.credits
+{
+  font-family: "cooper_hewittbook";
+  margin-bottom: 10px;
+}
 
+.back_to_top
+{
+  font-family: "cooper_hewittbook";
 
-
+}
 
 
 
