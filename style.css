@@ -223,11 +223,29 @@ h1 .character_bio_name
   font-family: "cooper_hewittbook";
   background-color: grey;
   margin: 10px 10px;
+  transition: 500ms;
+  
+}
+
+.character_relationships_frame:hover
+{
+  background-color: lightgray;
+  transform: scale(1.1);
+}
+
+.character_relationships_frame:hover a
+{
+  color: rgb(161, 0, 161);
 }
 
 .relationship_character_name
 {
   font-size: 1.3rem;
+}
+
+.relationship_status
+{
+  width: 70%;
 }
 
 .character_relationships
@@ -253,6 +271,17 @@ h1 .character_bio_name
 /* Home page */ 
 /********************************************************************/
 
+.character_frames
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+
+
 .character_frame
 {
   display: flex;
@@ -260,6 +289,13 @@ h1 .character_bio_name
   justify-content: center;
   align-items: center;
   align-content: center;
+  transition: 500ms;
+}
+
+.character_frame:hover
+{
+  opacity: 90%;
+  transform: scale(1.1);
 }
 
 .character_frame_name
@@ -270,14 +306,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.character_frames
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px 10px;
-}
+
+
+
 
 .credits
 {
