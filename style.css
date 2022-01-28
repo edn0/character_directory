@@ -2,6 +2,7 @@ body
 {
   background-image: url("backgrounds/blurred.png");
   background-size: cover;
+  background-color: black;
 }
 
 p
@@ -17,6 +18,8 @@ strong
   font-family: Verdana, Geneva, Tahoma, sans-serif
 
 }
+
+
 /********************************************************************/
 /* Colored bars, for separation and color theming */
 /********************************************************************/
@@ -298,16 +301,21 @@ h1 .character_bio_name
   transform: scale(1.1);
 }
 
-.character_frame_name
+.character_frame:nth-child(1n)
 {
-  font-size: 1.5rem;
-  text-decoration: none;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: scale_in 1s ease-in-out;
+  animation-delay: 0.1s;
 }
 
 
 
-
+.character_frame_name
+{
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: fade_in 1s;
+}
 
 
 .credits
@@ -322,10 +330,42 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
+@keyframes fade_in
+{
+  0% {
+    color : black;
+  }
+  100% {
+    color: initial
+  }
+}
 
+@keyframes scale_in
+{
+  0% {
+    transform: translateY(50%);
+  }
+  1% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: translateY(0%);
+    border: 0px;
+  }
+}
 
-
-
+@keyframes slide_in_right
+{
+  0% {
+    transform: translateY(-50%);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 
 /********************************************************************/
 /* Removes the stuff I don't like in classic CSS */
@@ -339,6 +379,7 @@ a:link
 { 
   text-decoration: none;
   color: purple;
+  animation: fade_in 1s ease-out;
 }
 
 a:visited 
