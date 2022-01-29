@@ -88,7 +88,7 @@ h1 .home_title /* gradient wouldn't show up on Safari iOS */
     color: black;
     display: flex;
     justify-content: center; 
-    animation: scale_in 2s ease-in;
+    animation: scale_in 1s ease-in;
     align-self: center;
 }
 
@@ -105,12 +105,16 @@ h2 /* For titles or short 5 word max description ? */
 @keyframes scale_in
 {
   0% {
-    transform: translateY(10%);
+    transform: scale(0.5) translateY(-90%);
     opacity: 0;
+    color: black
   }
+  75% {
+    color: initial;
 
+  }
   100% {
-    transform: translateY(0%);
+    transform: scale(1) translateY(0%);
     opacity: 1;
   }
 }
@@ -179,13 +183,15 @@ h1 .character_bio_name
   padding: 10px 0 0 0;
   text-align: center;
   font-style: "cooper_hewittthin";
+  animation: scale_in 1s ease-in-out;
+  font-size: 5vw;
 }
 
 .affiliation
 {
-  font-size: 2.5rem;
+  font-size: 4vw;
   font-family: "cooper_hewittbook";
-  padding: 0 2% 0 0;
+  padding: 0 0% 0 0;
   text-align: center;
 }
 
@@ -210,6 +216,7 @@ h1 .character_bio_name
   margin: 20px 20px ;
   gap: 20px;
   border-radius: 20px;
+  animation: slide_in_bottom 1s;
 }
 
 .character_bio_photo
@@ -222,6 +229,7 @@ h1 .character_bio_name
 {
   text-align: justify;
   margin: 0 0% 0 0;
+  animation: slide_in_bottom 1s;
 }
 
 .character_relationships_container
@@ -233,6 +241,34 @@ h1 .character_bio_name
   padding: 10px 10px;
 }
 
+
+
+@keyframes slide_in_bottom{
+0% {
+  transform: scale(0.7)translate(50%, 50%);
+}
+100% {
+  transform: translate(0%);
+}
+}
+
+@keyframes slide_in_bottom{
+  0% {
+  transform: scale(0.7)translate(-50%, 50%);
+}
+100% {
+  transform: translate(0%);
+}
+}
+
+@keyframes slide_in_bottom {
+  0% {
+    transform: scale(1) translateY(50%);
+  }
+  100% {
+    transform: scale(1) translateY(0%);
+  }
+}
 /********************************************************************/
 /* Relationships */
 /********************************************************************/
@@ -250,7 +286,7 @@ h1 .character_bio_name
   background-color: grey;
   margin: 10px 10px;
   transition: 500ms;
-  
+  animation: slide_in_bottom 1s;
 }
 
 .character_relationships_frame:hover
@@ -287,6 +323,7 @@ h1 .character_bio_name
   background-color: white;
   width: 100%;
   border-radius: 20px;
+  animation: slide_in_bottom 1s;
 }
 
 
