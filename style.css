@@ -8,7 +8,7 @@ body
 p
 {
   font-family: "cooper_hewittbook";
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: justify;
 }
 
@@ -185,6 +185,16 @@ h1 .character_bio_name
   font-style: "cooper_hewittthin";
   animation: scale_in 1s ease-in-out;
   font-size: 5vw;
+  background-image: linear-gradient(45deg, pink, cyan, purple, black);
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 1s;
+}
+
+.character_bio_name:hover {
+  background-position: right;
 }
 
 .affiliation
@@ -210,11 +220,10 @@ h1 .character_bio_name
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   padding: 20px 20px;
-  margin: 20px 20px ;
-  gap: 20px;
+  margin: 10px;
   border-radius: 20px;
   animation: slide_in_bottom 1s;
 }
@@ -236,9 +245,7 @@ h1 .character_bio_name
 {
   display: flex;
   flex-direction: row;
-  flex-flow: row;
-  justify-content: space-evenly;
-  padding: 10px 10px;
+  justify-content: space-between;
 }
 
 
@@ -280,13 +287,14 @@ h1 .character_bio_name
   align-content: center;
   align-items: center;
   justify-content: center;
-  padding: 10px 10px;
+  padding: 20px;
   text-align: center;
   font-family: "cooper_hewittbook";
   background-color: grey;
-  margin: 10px 10px;
+  margin: 10px;
   transition: 500ms;
   animation: slide_in_bottom 1s;
+  width: min-content;
 }
 
 .character_relationships_frame:hover
@@ -305,25 +313,34 @@ h1 .character_bio_name
   font-size: 1.3rem;
 }
 
-.relationship_status
-{
-  width: 70%;
-}
-
 .character_relationships
 {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: flex-start;
   align-items: baseline;
-  padding: 20px 20px;
-  margin: 20px 20px;
-  background-color: white;
-  width: 100%;
-  border-radius: 20px;
   animation: slide_in_bottom 1s;
+
+}
+
+.character_relationships_with_bio,
+.character_relationships_no_bio {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: baseline;
+  animation: slide_in_bottom 1s;
+
+
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
 }
 
 
@@ -437,6 +454,8 @@ h1 .character_bio_name
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: fade_in 1s;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2%;
 }
 
 
