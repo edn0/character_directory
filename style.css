@@ -25,37 +25,37 @@ strong
 /* Colored bars, for separation and color theming */
 /********************************************************************/
 
-#purple_bar
+.purple_bar
 {
   height: 5px;
   background-color: purple;
 }
 
-#royal_blue_bar
+.royal_blue_bar
 {
   height: 5px;
   background-color: rgb(65, 105, 225);
 }
 
-#emerald_green_bar
+.emerald_green_bar
 {
   height: 5px;
   background-color: #1B4242;
 }
 
-#black_bar
+.black_bar
 {
   height: 3px;
   background-color: black;
 }
 
-#grey_grad_50
+.grey_grad_50
 {
   height: 50px;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(63, 63, 63));
 }
 
-#grey_grad_7
+.grey_grad_7
 {
   height: 7px;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(63, 63, 63));
@@ -73,7 +73,9 @@ strong
 /********************************************************************/
 /********************************************************************/
 
-h1, .home_title/* For names ? */
+h1, 
+.home_title, 
+.character_bio_name
 {
     font-size: 5rem;
     margin: 0px;
@@ -179,7 +181,7 @@ header
   justify-content: space-between;
 }
 
-h1 .character_bio_name
+.character_bio_name
 {
   padding: 10px 0 0 0;
   text-align: center;
