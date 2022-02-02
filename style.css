@@ -5,6 +5,7 @@ body
   background-color: black;
 }
 
+
 p
 {
   font-family: "cooper_hewittbook";
@@ -448,7 +449,7 @@ h1 .character_bio_name
   text-align: center;
   padding: 5px;
   width: 10vw;
-  height: 3rem;
+  height: 3rem; /* so that nova doesn't stick out with that long name */
 }
 
 
