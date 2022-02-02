@@ -73,7 +73,7 @@ strong
 /********************************************************************/
 /********************************************************************/
 
-h1 /* For names ? */
+h1, .home_title/* For names ? */
 {
     font-size: 5rem;
     margin: 0px;
@@ -82,7 +82,7 @@ h1 /* For names ? */
 }
 
 
-h1 .home_title /* gradient wouldn't show up on Safari iOS */
+.home_title /* gradient wouldn't show up on Safari iOS */
 {
     font-size:5vmax;
     margin: 0px;
