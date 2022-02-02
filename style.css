@@ -1,6 +1,6 @@
 body
 {
-  background-image: url("backgrounds/blurred.png");
+  background: url("backgrounds/blurred.png") fixed;
   background-size: cover;
   background-color: black;
 }
@@ -226,7 +226,7 @@ h1 .character_bio_name
   margin: 10px;
   border-radius: 20px;
   animation: slide_in_bottom 1s;
-  width: 70vw;
+  width: 65vw;
 }
 
 .character_bio_photo
@@ -307,7 +307,7 @@ h1 .character_bio_name
   justify-content: space-between;
   align-items: baseline;
   animation: slide_in_bottom 1s;
-  width: 30vw;
+  width: 35vw;
 }
 
 .character_relationships_with_bio,
@@ -341,8 +341,7 @@ h1 .character_bio_name
   justify-content: space-evenly;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 10px 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  gap: 50px 10px;
   padding: 20px 10px;
   border-radius: 10px;
   animation: slide_in_bottom 900ms ease-in-out 200ms forwards;
@@ -362,6 +361,8 @@ h1 .character_bio_name
   align-content: center;
   transition: 500ms;
   animation: bounce 1.2s ease-in-out;
+  padding: 30px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .character_frame:hover
@@ -441,11 +442,13 @@ h1 .character_bio_name
 
 .character_frame_name
 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  padding-top: 5px;
+  padding: 5px;
+  width: 10vw;
+  height: 3rem;
 }
 
 
